@@ -15,7 +15,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<script type='text/javascript' src='js/mobile.js'></script>
+	<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
 </head>
+	
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THS36VC"
@@ -27,6 +68,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<a id="icon1" href="form.html">Click to register</a>
 	<div id="header">
 		<h1><a href="index.html">Belle &amp; Carrie <span>Rehabilitation Yoga</span></a></h1>
+		<h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 		<ul id="navigation">
 			<li class="current">
 				<a href="index.html">Home</a>
@@ -48,19 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li>
 				<a href="blog.html">Blog</a>
 			</li>
-			<div class="dropdown">
-  <div class="dropdown">
-  <button>Login Options</button>
-	  <li>
-  <div class="dropdown-content">
-	  <ul>
-  <a href="https://ww.facebook.com/">Facebbok</a>
-  <a href="https://www.google.com/">Google</a>
-  <a href="https://www.twitter.com">Twitter</a>
-	  </ul>
-	  </li>
-  </div>
-</div>
+			
 		</ul>
 	</div>
 	<div id="body">
