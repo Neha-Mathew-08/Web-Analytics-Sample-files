@@ -149,19 +149,16 @@ dataLayer.push({
 	    
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "add_to_cart",
+  event: "view_item_list",
   ecommerce: {
     item_list_id: "related_products",
-	  transaction_id:"SBI_222",
     item_list_name: "Related products",
     items: [
      {
       item_id: "ITM_12345",
       item_name: "Python",
       affiliation: "online_Course",
-      currency: "INR",
-	     tax:0.5,
-	     value: 5000,
+      coupon: "SUMMER_FUN",
       discount: 100,
       item_brand: "MOOC",
       item_category: "Python",
@@ -177,9 +174,7 @@ dataLayer.push({
       item_id: "WEB_5678",
       item_name: "Web Analytics",
       affiliation: "online_Course",
-      currency: "INR",
-	     tax:0.5,
-	     value: 5000,
+      coupon: "SUMMER_FUN",
       discount: 100,
       item_brand: "MOOC",
       item_category: "WA",
@@ -239,7 +234,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button id="btncart1" onclick="dataLayer.push({
-  event: "add_to_cart",
+  event: "view_item_list",
   ecommerce: {
     item_list_id: "related_products",
     item_list_name: "Related products",
@@ -248,9 +243,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       item_id: "ITM_12345",
       item_name: "Python",
       affiliation: "online_Course",
-      currency: "INR",
-	     tax:0.5,
-	     value: 5000,
+      coupon: "SUMMER_FUN",
       discount: 100,
       item_brand: "MOOC",
       item_category: "Python",
@@ -266,9 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       item_id: "WEB_5678",
       item_name: "Web Analytics",
       affiliation: "online_Course",
-      currency: "INR",
-	     tax:0.5,
-	     value: 5000,
+      coupon: "SUMMER_FUN",
       discount: 100,
       item_brand: "MOOC",
       item_category: "WA",
